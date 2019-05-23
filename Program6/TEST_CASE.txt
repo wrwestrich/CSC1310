@@ -1,0 +1,23 @@
+1
+crockett_movie_data.txt
+6
+3
+Coco
+105
+2017
+Animation, Adventure, Comedy
+PG
+2
+8.5
+6
+3
+The Matrix
+4
+10
+5
+4
+4
+Drama, Action
+8
+6
+7

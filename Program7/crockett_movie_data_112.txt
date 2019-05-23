@@ -1,0 +1,782 @@
+The Shawshank Redemption
+82
+1994
+Drama, Crime
+R
+0
+9.3
+The Godfather
+115
+1972
+Drama, Crime
+R
+3
+9.2
+The Dark Knight
+92
+2008
+Action, Crime
+PG-13
+2
+9.0
+Schindler's List
+195
+1993
+Biography
+R
+7
+8.9
+The Lord of the Rings: The Return of the King
+201
+2003
+Adventure
+PG-13
+11
+8.9
+Fight Club
+139
+1999
+Drama
+R
+0
+8.8
+The Lord of the Rings: Fellowship of the Ring
+178
+2001
+Adventure
+PG-13
+4
+8.8
+Forrest Gump
+142
+1994
+Drama
+PG-13
+6
+8.8
+The Matrix
+136
+1999
+Action, Sci-Fi
+R
+4
+8.7
+The Lord of the Rings: The Two Towers
+179
+2002
+Adventure
+PG-13
+2
+8.7
+One Flew Over the Cuckoo's Nest
+133
+1975
+Drama
+R
+5
+8.7
+Se7en
+127
+1995
+Crime, Drama, Mystery
+R
+1
+8.6
+It's a Wonderful Life
+130
+1946
+Drama, Family, Fantasy
+PG
+0
+8.6
+Saving Private Ryan
+169
+1998
+Drama, War
+R
+5
+8.6
+Interstellar
+169
+2014
+Adveture, Drama, Sci-Fi
+PG-13
+1
+8.6
+The Green Mile
+189
+1999
+Crime, Drama, Fantasy
+R
+0
+8.5
+Raiders of the Lost Ark
+115
+1981
+Action, Adventure
+PG
+4
+8.5
+Back to the Future
+116
+1985
+Adventure, Comedy, Sci-Fi
+PG
+1
+8.5
+Peter Rabbit
+95
+2018
+Animation, Adventure, Comedy, Family, Fantasy
+PG
+0
+6.3
+Jumanji: Welcome to the Jungle
+119
+2017
+Action, Adventure, Comedy, Fantasy
+PG-13
+0
+7.2
+The Greatest Showman
+105
+2017
+Biography, Drama, Musical, Romance
+PG
+0
+8
+Early Man
+89
+2018
+PG
+0
+6.4
+Saving Private Ryan
+169
+1998
+Drama, War
+R
+5
+8.6
+Forrest Gump
+142
+1994
+Drama
+PG-13
+6
+8.8
+The Shawshank Redemption
+82
+1994
+Drama, Crime
+R
+0
+9.3
+The Godfather
+115
+1972
+Drama, Crime
+R
+3
+9.2
+The Dark Knight
+92
+2008
+Action, Crime
+PG-13
+2
+9.0
+Schindler's List
+195
+1993
+Biography
+R
+7
+8.9
+The Lord of the Rings: The Return of the King
+201
+2003
+Adventure
+PG-13
+11
+8.9
+Fight Club
+139
+1999
+Drama
+R
+0
+8.8
+The Lord of the Rings: Fellowship of the Ring
+178
+2001
+Adventure
+PG-13
+4
+8.8
+Forrest Gump
+142
+1994
+Drama
+PG-13
+6
+8.8
+The 400 Blows
+136
+1999
+Action, Sci-Fi
+R
+4
+8.7
+La Haine
+179
+2002
+Adventure
+PG-13
+2
+8.7
+The Godfather
+133
+1975
+Drama
+R
+5
+8.7
+The Godfather II
+127
+1995
+Crime, Drama, Mystery
+R
+1
+8.6
+Man Bites Dog
+130
+1946
+Drama, Family, Fantasy
+PG
+0
+8.6
+The Departed
+169
+1998
+Drama, War
+R
+5
+8.6
+Umberto D.
+169
+2014
+Adveture, Drama, Sci-Fi
+PG-13
+1
+8.6
+White Heat
+189
+1999
+Crime, Drama, Fantasy
+R
+0
+8.5
+Eddie Murphy: Raw
+115
+1981
+Action, Adventure
+PG
+4
+8.5
+All Quiet on the Western Front
+116
+1985
+Adventure, Comedy, Sci-Fi
+PG
+1
+8.5
+Duck Soup
+95
+2018
+Animation, Adventure, Comedy, Family, Fantasy
+PG
+0
+6.3
+Mafioso
+119
+2017
+Action, Adventure, Comedy, Fantasy
+PG-13
+0
+7.2
+Stalag 17
+105
+2017
+Biography, Drama, Musical, Romance
+PG
+0
+8
+The Shawshank Redemption
+89
+2018
+PG
+0
+6.4
+The Dark Knight
+169
+1998
+Drama, War
+R
+5
+8.6
+Fight Club
+142
+1994
+Drama
+PG-13
+6
+8.8
+Batman Begins
+142
+1994
+Drama
+PG-13
+6
+8.8
+The Big Lebowski
+142
+1994
+Drama
+PG-13
+6
+8.8
+Snatch
+142
+1994
+Drama
+PG-13
+6
+8.8
+3 Idiots
+142
+1994
+Drama
+PG-13
+6
+8.8
+8 Mile
+142
+1994
+Drama
+PG-13
+6
+8.8
+12 Angry Men
+142
+1994
+Drama
+PG-13
+6
+8.8
+17 Again
+142
+1994
+Drama
+PG-13
+6
+8.8
+25th Hour
+142
+1994
+Drama
+PG-13
+6
+8.8
+27 Dresses
+142
+1994
+Drama
+PG-13
+6
+8.8
+About Time
+142
+1994
+Drama
+PG-13
+6
+8.8
+About Schmidt
+142
+1994
+Drama
+PG-13
+6
+8.8
+Abraham Lincoln: Vampire Hunter
+142
+1994
+Drama
+PG-13
+6
+8.8
+Airport
+142
+1994
+Drama
+PG-13
+6
+8.8
+Airport 1975
+142
+1994
+Drama
+PG-13
+6
+8.8
+Akeelah and the Bee
+142
+1994
+Drama
+PG-13
+6
+8.8
+Aladdin
+142
+1994
+Drama
+PG-13
+6
+8.8
+The Alamo
+142
+1994
+Drama
+PG-13
+6
+8.8
+Albatross
+142
+1994
+Drama
+PG-13
+6
+8.8
+Almost Famous
+142
+1994
+Drama
+PG-13
+6
+8.8
+American Pie
+142
+1994
+Drama
+PG-13
+6
+8.8
+American Gangster
+142
+1994
+Drama
+PG-13
+6
+8.8
+Annie
+142
+1994
+Drama
+PG-13
+6
+8.8
+American Sniper
+142
+1994
+Drama
+PG-13
+6
+8.8
+Apocalypse Now
+142
+1994
+Drama
+PG-13
+6
+8.8
+Antz
+142
+1994
+Drama
+PG-13
+6
+8.8
+Annie Hall
+142
+1994
+Drama
+PG-13
+6
+8.8
+Angels with Dirty Faces
+142
+1994
+Drama
+PG-13
+6
+8.8
+Angel Heart
+142
+1994
+Drama
+PG-13
+6
+8.8
+Are We Done Yet?
+142
+1994
+Drama
+PG-13
+6
+8.8
+As Good As It Gets
+142
+1994
+Drama
+PG-13
+6
+8.8
+Assassination Games
+142
+1994
+Drama
+PG-13
+6
+8.8
+Arthur
+142
+1994
+Drama
+PG-13
+6
+8.8
+Argo
+142
+1994
+Drama
+PG-13
+6
+8.8
+The Aristocats
+142
+1994
+Drama
+PG-13
+6
+8.8
+Atlantis: The Lost Empire
+142
+1994
+Drama
+PG-13
+6
+8.8
+Alvin and the Chipmunks
+142
+1994
+Drama
+PG-13
+6
+8.8
+All of Me
+142
+1994
+Drama
+PG-13
+6
+8.8
+All Dogs Go to Heaven
+142
+1994
+Drama
+PG-13
+6
+8.8
+Alive
+142
+1994
+Drama
+PG-13
+6
+8.8
+Avatar
+142
+1994
+Drama
+PG-13
+6
+8.8
+Austin POwers in GOldmember
+142
+1994
+Drama
+PG-13
+6
+8.8
+Auntie Mame
+142
+1994
+Drama
+PG-13
+6
+8.8
+Babe
+142
+1994
+Drama
+PG-13
+6
+8.8
+Back to School
+142
+1994
+Drama
+PG-13
+6
+8.8
+Back to the FUture
+142
+1994
+Drama
+PG-13
+6
+8.8
+Bad Boys II
+142
+1994
+Drama
+PG-13
+6
+8.8
+Bambi
+142
+1994
+Drama
+PG-13
+6
+8.8
+Bambi II
+142
+1994
+Drama
+PG-13
+6
+8.8
+Big Fish
+142
+1994
+Drama
+PG-13
+6
+8.8
+Beverly Hills Cop II
+142
+1994
+Drama
+PG-13
+6
+8.8
+Better Off Dead
+142
+1994
+Drama
+PG-13
+6
+8.8
+Big Hero 6
+142
+1994
+Drama
+PG-13
+6
+8.8
+Boyhood
+142
+1994
+Drama
+PG-13
+6
+8.8
+Bottle Rocket
+142
+1994
+Drama
+PG-13
+6
+8.8
+Boogeyman
+142
+1994
+Drama
+PG-13
+6
+8.8
+Boys from Brazil
+142
+1994
+Drama
+PG-13
+6
+8.8
+Boys Town
+142
+1994
+Drama
+PG-13
+6
+8.8
+The Big Lebowski
+142
+1994
+Drama
+PG-13
+6
+8.8
+Big Fat Liar
+142
+1994
+Drama
+PG-13
+6
+8.8
+Bicentennial Man
+142
+1994
+Drama
+PG-13
+6
+8.8
+A better Tomorrow
+142
+1994
+Drama
+PG-13
+6
+8.8
+Better Than Chocolate
+142
+1994
+Drama
+PG-13
+6
+8.8
+The Best Little Whorehouse in Texas
+142
+1994
+Drama
+PG-13
+6
+8.8
+Bananas
+142
+1994
+Drama
+PG-13
+6
+8.8

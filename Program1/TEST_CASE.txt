@@ -1,0 +1,30 @@
+100
+1
+crockett_movie_list.txt
+1
+crockett_movie_data.txt
+2
+duck.txt
+3
+Troop Beverly Hills
+120
+1992
+Comedy
+PG
+0
+4.5
+4
+17
+5
+13
+1
+It's A Wonderful Life
+5
+G
+7
+8.5
+8
+6
+2
+bammalammajamjam.txt
+7

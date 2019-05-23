@@ -1,0 +1,126 @@
+The Shawshank Redemption
+82
+1994
+Drama, Crime
+R
+0
+9.3
+The Godfather
+115
+1972
+Drama, Crime
+R
+3
+9.2
+The Dark Knight
+92
+2008
+Action, Crime
+PG-13
+2
+9.0
+Schindler's List
+195
+1993
+Biography
+R
+7
+8.9
+The Lord of the Rings: The Return of the King
+201
+2003
+Adventure
+PG-13
+11
+8.9
+Fight Club
+139
+1999
+Drama
+R
+0
+8.8
+The Lord of the Rings: Fellowship of the Ring
+178
+2001
+Adventure
+PG-13
+4
+8.8
+Forrest Gump
+142
+1994
+Drama
+PG-13
+6
+8.8
+The Matrix
+136
+1999
+Action, Sci-Fi
+R
+4
+8.7
+The Lord of the Rings: The Two Towers
+179
+2002
+Adventure
+PG-13
+2
+8.7
+One Flew Over the Cuckoo's Nest
+133
+1975
+Drama
+R
+5
+8.7
+Se7en
+127
+1995
+Crime, Drama, Mystery
+R
+1
+8.6
+It's a Wonderful Life
+130
+1946
+Drama, Family, Fantasy
+PG
+0
+8.6
+Saving Private Ryan
+169
+1998
+Drama, War
+R
+5
+8.6
+Interstellar
+169
+2014
+Adveture, Drama, Sci-Fi
+PG-13
+1
+8.6
+The Green Mile
+189
+1999
+Crime, Drama, Fantasy
+R
+0
+8.5
+Raiders of the Lost Ark
+115
+1981
+Action, Adventure
+PG
+4
+8.5
+Back to the Future
+116
+1985
+Adventure, Comedy, Sci-Fi
+PG
+1
+8.5
