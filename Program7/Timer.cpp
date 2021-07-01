@@ -7,7 +7,7 @@ time_t getTime()
 	return time(NULL);
 }
 
-double totalTime (time_t start, time_t end)
+double totalTime(time_t start, time_t end)
 {
-	return difftime (end, start);
+	return difftime(end, start);
 }

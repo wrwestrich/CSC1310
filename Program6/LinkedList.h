@@ -14,30 +14,30 @@ using namespace std;
 template <typename T>
 class LinkedList
 {
-	private:
-		struct ListNode
-		{
-			T value;           	
-			struct ListNode *next;  	
-		}; 
-		ListNode *head;		
-		ListNode *tail;		
-		int numNodes;
+private:
+	struct ListNode
+	{
+		T value;
+		struct ListNode *next;
+	};
+	ListNode *head;
+	ListNode *tail;
+	int numNodes;
 
-	public:
-		LinkedList()
-		{ 
-			head = NULL; 
-			tail = NULL;
-			numNodes = 0;
-		}
-		~LinkedList();
-		int getLength();
-		T getNodeValue(size_t);
-		void appendNode(T);
-		void insertNode(T, int);
-		void deleteNode(int);
-        void Swap(size_t, size_t);
+public:
+	LinkedList()
+	{
+		head = NULL;
+		tail = NULL;
+		numNodes = 0;
+	}
+	~LinkedList();
+	int getLength();
+	T getNodeValue(size_t);
+	void appendNode(T);
+	void insertNode(T, int);
+	void deleteNode(int);
+	void Swap(size_t, size_t);
 };
 
 template <typename T>
@@ -61,10 +61,11 @@ T LinkedList<T>::getNodeValue(size_t position)
 		currentPos++;
 		nodePtr = nodePtr->next;
 	}*/
-    for(size_t currentPos = 0; currentPos < position; ++currentPos){
-        nodePtr = nodePtr->next;
-    }
-    return nodePtr->value;
+	for (size_t currentPos = 0; currentPos < position; ++currentPos)
+	{
+		nodePtr = nodePtr->next;
+	}
+	return nodePtr->value;
 }
 
 //**************************************************
@@ -74,7 +75,7 @@ T LinkedList<T>::getNodeValue(size_t position)
 template <typename T>
 void LinkedList<T>::appendNode(T nodeValue)
 {
-	ListNode *newNode;  // To point to a new node
+	ListNode *newNode; // To point to a new node
 	// Allocate a new node and store nodeValue there.
 	newNode = new ListNode;
 	++numNodes;
@@ -82,17 +83,17 @@ void LinkedList<T>::appendNode(T nodeValue)
 	newNode->next = NULL;
 
 	// If there are no nodes in the list make newNode the first node.
-	if (!head ) 
+	if (!head)
 	{
 		head = newNode;
-        head->next = tail;
+		head->next = tail;
 		tail = newNode;
 	}
-	else  // Otherwise, insert newNode at end.
+	else // Otherwise, insert newNode at end.
 	{
 		//set the current last node's next pointer to the new node
 		tail->next = newNode;
-		
+
 		//now the tail is the new node
 		tail = newNode;
 	}
@@ -101,8 +102,8 @@ void LinkedList<T>::appendNode(T nodeValue)
 template <typename T>
 void LinkedList<T>::insertNode(T nodeValue, int iPos)
 {
-	ListNode *newNode;  // To point to a new node
-	ListNode *nodePtr;  // To move through the list
+	ListNode *newNode; // To point to a new node
+	ListNode *nodePtr; // To move through the list
 	ListNode *previousNode;
 	// Allocate a new node and store nodeValue there.
 	newNode = new ListNode;
@@ -111,36 +112,36 @@ void LinkedList<T>::insertNode(T nodeValue, int iPos)
 	newNode->next = NULL;
 
 	// If there are no nodes in the list make newNode the first node.
-	if (!head ) 
+	if (!head)
 	{
 		head = newNode;
 		tail = newNode;
 	}
-	else  // Otherwise, insert newNode at position.
+	else // Otherwise, insert newNode at position.
 	{
-		int pos = 0; 
+		int pos = 0;
 		nodePtr = head;
-		
-		if(iPos == 0) //insert at beginning of list
+
+		if (iPos == 0) //insert at beginning of list
 		{
 			newNode->next = head;
 			head = newNode;
 			return;
 		}
-		if(iPos >= this->getLength()-1) //insert at end
+		if (iPos >= this->getLength() - 1) //insert at end
 		{
 			newNode->next = NULL;
 			tail->next = newNode;
 			tail = newNode;
 			return;
 		}
-		while(iPos != pos)
+		while (iPos != pos)
 		{
 			previousNode = nodePtr;
 			nodePtr = nodePtr->next;
 			pos++;
 		}
-		
+
 		newNode->next = nodePtr;
 		previousNode->next = newNode;
 	}
@@ -151,8 +152,8 @@ void LinkedList<T>::insertNode(T nodeValue, int iPos)
 template <typename T>
 void LinkedList<T>::deleteNode(int position)
 {
-	ListNode *nodePtr;       // To traverse the list
-	ListNode *previousNode;  // To point to the previous node
+	ListNode *nodePtr;			// To traverse the list
+	ListNode *previousNode; // To point to the previous node
 
 	// Determine if the first node is the one.
 	if (position == 0)
@@ -170,7 +171,7 @@ void LinkedList<T>::deleteNode(int position)
 
 		// Skip all nodes whose value member is not equal to the sent position.
 		while (ptrPosition != position)
-		{  
+		{
 			previousNode = nodePtr;
 			nodePtr = nodePtr->next;
 			ptrPosition++;
@@ -178,9 +179,9 @@ void LinkedList<T>::deleteNode(int position)
 
 		// If nodePtr is not at the end of the list, link the previous node to the node after
 		// nodePtr, then delete nodePtr.
-		if(nodePtr == tail)
+		if (nodePtr == tail)
 			tail = previousNode;
-		
+
 		previousNode->next = nodePtr->next;
 		delete nodePtr;
 		--numNodes;
@@ -195,8 +196,8 @@ void LinkedList<T>::deleteNode(int position)
 template <typename T>
 LinkedList<T>::~LinkedList()
 {
-	ListNode *nodePtr;   // To traverse the list
-	ListNode *nextNode;  // To point to the next node
+	ListNode *nodePtr;	// To traverse the list
+	ListNode *nextNode; // To point to the next node
 
 	// Position nodePtr at the head of the list.
 	nodePtr = head;
@@ -217,21 +218,24 @@ LinkedList<T>::~LinkedList()
 }
 
 template <class T>
-void LinkedList<T>::Swap(size_t i, size_t j){
+void LinkedList<T>::Swap(size_t i, size_t j)
+{
 
-    ListNode* node1 = head;
-    ListNode* node2;
-    T temp;
+	ListNode *node1 = head;
+	ListNode *node2;
+	T temp;
 
-    for(size_t k = 0; k < i; ++k){
-        node1 = node1->next;
-    }
-    temp = node1->value;
-    node2 = node1->next;
-    for(size_t p = i+1; p < j; ++p){
-        node2 = node2->next;
-    }
-    node1->value = node2->value;
-    node2->value = temp;
+	for (size_t k = 0; k < i; ++k)
+	{
+		node1 = node1->next;
+	}
+	temp = node1->value;
+	node2 = node1->next;
+	for (size_t p = i + 1; p < j; ++p)
+	{
+		node2 = node2->next;
+	}
+	node1->value = node2->value;
+	node2->value = temp;
 }
 #endif

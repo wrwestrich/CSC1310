@@ -8,23 +8,26 @@
 #ifndef LIST_H
 #define LIST_H
 
-template<class Type>
-class list{
-    private:
-        struct Node{
-            Type value;
-            Node* next;
-        };
-        Node* head;
-        Node* tail;
-        std::size_t size;
+template <class Type>
+class list
+{
+private:
+  struct Node
+  {
+    Type value;
+    Node *next;
+  };
+  Node *head;
+  Node *tail;
+  std::size_t size;
 
-    public:
-        list()
-            : head(nullptr), tail(nullptr), size(0){
-        }
-        
-        /*list(const list& other){
+public:
+  list()
+      : head(nullptr), tail(nullptr), size(0)
+  {
+  }
+
+  /*list(const list& other){
 
         }
 
@@ -32,64 +35,72 @@ class list{
 
         }*/
 
-        ~list(){
-            Node* temp = head;
-            
-            while(temp != nullptr){
-                Node* next = temp->next;
-                delete temp;
-                temp = next;
-            }
-        }
+  ~list()
+  {
+    Node *temp = head;
 
-        std::size_t GetLength(){
-                return size;
-        }
+    while (temp != nullptr)
+    {
+      Node *next = temp->next;
+      delete temp;
+      temp = next;
+    }
+  }
 
-        Type GetValue(std::size_t i){
-            
-            Node* temp = head;
-            for(std::size_t j = 0; j < i; ++j)
-                temp = temp->next;
+  std::size_t GetLength()
+  {
+    return size;
+  }
 
-            return temp->value;
-        }
+  Type GetValue(std::size_t i)
+  {
 
-        void AppendNode(Type* newValue){
-            Node* newNode = new Node;
+    Node *temp = head;
+    for (std::size_t j = 0; j < i; ++j)
+      temp = temp->next;
 
-            newNode->value = *newValue;
-            newNode->next = nullptr;
+    return temp->value;
+  }
 
-            if(head == nullptr){
-                head = newNode;
-                tail = newNode;
-            }
-            else{
-                tail->next = newNode;
-                tail = newNode;
-            }
-            ++size;
-        }
+  void AppendNode(Type *newValue)
+  {
+    Node *newNode = new Node;
 
-        void DeleteNode(std::size_t i){
-            Node* temp = head;
+    newNode->value = *newValue;
+    newNode->next = nullptr;
 
-            for(std::size_t j = 0; j < i-1; ++j)
-                temp = temp->next;
+    if (head == nullptr)
+    {
+      head = newNode;
+      tail = newNode;
+    }
+    else
+    {
+      tail->next = newNode;
+      tail = newNode;
+    }
+    ++size;
+  }
 
-            if(i == 0)
-                head = temp->next;
+  void DeleteNode(std::size_t i)
+  {
+    Node *temp = head;
 
-            if(temp->next->next == nullptr)
-                tail = temp->next;
+    for (std::size_t j = 0; j < i - 1; ++j)
+      temp = temp->next;
 
-            temp->next = temp->next->next;
-            temp = temp->next;
-            delete temp;
+    if (i == 0)
+      head = temp->next;
 
-            --size;
-        }
+    if (temp->next->next == nullptr)
+      tail = temp->next;
+
+    temp->next = temp->next->next;
+    temp = temp->next;
+    delete temp;
+
+    --size;
+  }
 };
 
 #endif

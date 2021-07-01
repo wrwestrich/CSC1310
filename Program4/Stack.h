@@ -7,21 +7,24 @@
 
 #ifndef STACK_H
 #define STACK_H
-#include<iostream>
+#include <iostream>
 
-template<class Type>
-class Stack{
-    private:
-        struct Node{
-            Type value;
-            Node* next;
-        };
-        Node* top;
+template <class Type>
+class Stack
+{
+private:
+  struct Node
+  {
+    Type value;
+    Node *next;
+  };
+  Node *top;
 
-    public:
-        Stack() : top(nullptr){
-        }
-        /*
+public:
+  Stack() : top(nullptr)
+  {
+  }
+  /*
         Stack(const Stack<Type>& other){
             value = other.value;
             next = other.next;
@@ -36,55 +39,65 @@ class Stack{
             return *this;
         }*/
 
-        ~Stack(){
-            Node* temp;
+  ~Stack()
+  {
+    Node *temp;
 
-            while(!(IsEmpty())){
-                temp = top->next;
-                delete top;
-                top = temp;
-            }
-        }
+    while (!(IsEmpty()))
+    {
+      temp = top->next;
+      delete top;
+      top = temp;
+    }
+  }
 
-        void Push(Type newValue){
-            Node* temp = new Node;
-            temp->value = newValue;
+  void Push(Type newValue)
+  {
+    Node *temp = new Node;
+    temp->value = newValue;
 
-            if(IsEmpty()){
-                top = temp;
-                temp->next = nullptr;
-            }
-            else{
-                temp->next = top;
-                top = temp;
-            }
-        }
+    if (IsEmpty())
+    {
+      top = temp;
+      temp->next = nullptr;
+    }
+    else
+    {
+      temp->next = top;
+      top = temp;
+    }
+  }
 
-        Type Pop(){
-            Node* temp;
-            Type poppedValue;
+  Type Pop()
+  {
+    Node *temp;
+    Type poppedValue;
 
-            if(IsEmpty())
-                std::cout << "Stack is empty." << std::endl << std::endl;
-            else{
-                poppedValue = top->value;
-                temp = top->next;
-                delete top;
-                top = temp;
-            }
+    if (IsEmpty())
+      std::cout << "Stack is empty." << std::endl
+                << std::endl;
+    else
+    {
+      poppedValue = top->value;
+      temp = top->next;
+      delete top;
+      top = temp;
+    }
 
-            return poppedValue;
-        }
+    return poppedValue;
+  }
 
-        Type Peek(){
-            return top->value;
-        }
+  Type Peek()
+  {
+    return top->value;
+  }
 
-        bool IsEmpty(){
-            if(top == nullptr)
-                return true;
-            else
-                return false;
-        }
+  bool IsEmpty()
+  {
+    if (top == nullptr)
+      return true;
+    else
+      return false;
+  }
 };
 #endif

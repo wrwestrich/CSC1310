@@ -12,16 +12,17 @@
 
 static const std::size_t MONTHS = 12;
 
-class DogHealth{
-    private:
-        std::string name;
-        int age, heartRate[MONTHS];
-        double weight[MONTHS];
+class DogHealth
+{
+private:
+  std::string name;
+  int age, heartRate[MONTHS];
+  double weight[MONTHS];
 
-    public:
-        DogHealth();
-        void printDogHealth();
-        void printWeightStatistics();
-        void printHeartRateStatistics();
+public:
+  DogHealth();
+  void printDogHealth();
+  void printWeightStatistics();
+  void printHeartRateStatistics();
 };
 #endif
