@@ -17,81 +17,83 @@
 
 class BinaryTree
 {
-    private:
-        struct Node{
-            std::string name;
-            int num;
-            Node* left;
-            Node* right;
+private:
+  struct Node
+  {
+    std::string name;
+    int num;
+    Node *left;
+    Node *right;
 
-            Node(std::string name, int num, Node* left, Node* right){
-                this->name = name;
-                this->num = num;
-                this->left = left;
-                this->right = right;
-            }
-        };
-        Node* root;
+    Node(std::string name, int num, Node *left, Node *right)
+    {
+      this->name = name;
+      this->num = num;
+      this->left = left;
+      this->right = right;
+    }
+  };
+  Node *root;
 
-        void Copy(Node*);
+  void Copy(Node *);
 
-        //void Delete(std::string);
+  //void Delete(std::string);
 
-        void RemoveSubtree(Node*);
+  void RemoveSubtree(Node *);
 
-        void Insert(Node*);
+  void Insert(Node *);
 
-        void DisplayInOrder(Node*);
+  void DisplayInOrder(Node *);
 
-        Node* Traverse(std::string, Node*&); // DeleteNode
+  Node *Traverse(std::string, Node *&); // DeleteNode
 
-        void Least(Node*, int&, std::string&);
+  void Least(Node *, int &, std::string &);
 
-        void Most(Node*, int&, std::string&);
+  void Most(Node *, int &, std::string &);
 
-        void Total(Node*, int&);
+  void Total(Node *, int &);
 
-        Node* Balance(Node*);
+  Node *Balance(Node *);
 
-        int Height(Node*);
+  int Height(Node *);
 
-        int HeightDiff(Node*);
+  int HeightDiff(Node *);
 
-        Node* ll_rotation(Node*);
+  Node *ll_rotation(Node *);
 
-        Node* lr_rotation(Node*);
+  Node *lr_rotation(Node *);
 
-        Node* rl_rotation(Node*);
+  Node *rl_rotation(Node *);
 
-        Node* rr_rotation(Node*);
+  Node *rr_rotation(Node *);
 
-        void DisplayHorizontal(Node*, int, bool);
+  void DisplayHorizontal(Node *, int, bool);
 
-    public:
-        BinaryTree();
+public:
+  BinaryTree();
 
-        // Copy constructor
-        BinaryTree(const BinaryTree&);
+  // Copy constructor
+  BinaryTree(const BinaryTree &);
 
-        // Copy assignment operator
-        const BinaryTree& operator=(const BinaryTree&);
+  // Copy assignment operator
+  const BinaryTree &operator=(const BinaryTree &);
 
-        ~BinaryTree();
+  ~BinaryTree();
 
-        void Insert(std::string, int); // InsertNode
+  void Insert(std::string, int); // InsertNode
 
-        int Search(std::string);
+  int Search(std::string);
 
-        //void Remove(std::string);
+  //void Remove(std::string);
 
-        void DisplayInOrder();
+  void DisplayInOrder();
 
-        void GetLeast(int&, std::string&);
+  void GetLeast(int &, std::string &);
 
-        void GetMost(int&, std::string&);
+  void GetMost(int &, std::string &);
 
-        void GetTotal(int&);
+  void GetTotal(int &);
 
-        void Display();
+  void Display();
 };
 #endif

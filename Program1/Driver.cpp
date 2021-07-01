@@ -16,18 +16,18 @@ int main()
 {
 	int menuChoice;
 	int maxMovies;
-	char filename[25];	
-	
+	char filename[25];
+
 	cout << "\n\nWhat is the maximum number of movies you can have in your library?\n";
 	cin >> maxMovies;
-	while(maxMovies <= 0)
+	while (maxMovies <= 0)
 	{
 		cout << "\n\nYou have to have at least one movie in your library.\n";
 		cout << "What is the maximum number of movies you can have in your library.\n";
 		cin >> maxMovies;
 	}
 	Movies movieLibrary(maxMovies);
-	
+
 	do
 	{
 		cout << "\n\nWhat would you like to do?\n";
@@ -40,50 +40,51 @@ int main()
 		cout << "7.  Delete ALL movies and end the program.\n";
 		cout << "CHOOSE 1-7:  ";
 		cin >> menuChoice;
-		while(menuChoice < 1 || menuChoice > 7)
+		while (menuChoice < 1 || menuChoice > 7)
 		{
 			cout << "That is not a valid choice.\n";
 			cout << "CHOOSE 1-7:  ";
 			cin >> menuChoice;
 		}
-		
-		switch(menuChoice)
+
+		switch (menuChoice)
 		{
-			case 1:	cout << "\n\nWhat is the name of the file? (example.txt):  ";
-					cin >> filename;
-					movieLibrary.readMoviesFromFile(filename); //function is in Movies.cpp
-					break;
-					
-			case 2: cout << "\n\nWhat do you want to name the file? (example.txt):  ";
-					cin >> filename;
-					movieLibrary.saveToFile(filename); //function is in Movies.cpp
-					 
-					break;
-					
-			case 3:	//add a movie
-					movieLibrary.addMovieToArray();
-					break;
-					
-			case 4:	//remove a movie
-					movieLibrary.removeMovieFromArray();					
-					break;
-					
-			case 5: //edit a movie
-					movieLibrary.editMovieInArray();					
-					break;
-					
-			case 6: //print all movies
-					movieLibrary.displayMovies();
-					break;
-					
-			case 7: //delete all movies
-					break;
-					
+		case 1:
+			cout << "\n\nWhat is the name of the file? (example.txt):  ";
+			cin >> filename;
+			movieLibrary.readMoviesFromFile(filename); //function is in Movies.cpp
+			break;
+
+		case 2:
+			cout << "\n\nWhat do you want to name the file? (example.txt):  ";
+			cin >> filename;
+			movieLibrary.saveToFile(filename); //function is in Movies.cpp
+
+			break;
+
+		case 3: //add a movie
+			movieLibrary.addMovieToArray();
+			break;
+
+		case 4: //remove a movie
+			movieLibrary.removeMovieFromArray();
+			break;
+
+		case 5: //edit a movie
+			movieLibrary.editMovieInArray();
+			break;
+
+		case 6: //print all movies
+			movieLibrary.displayMovies();
+			break;
+
+		case 7: //delete all movies
+			break;
 		}
-		
-	} while(menuChoice != 7);
-	
+
+	} while (menuChoice != 7);
+
 	cout << "\n\nGOODBYE!\n\n";
-	
+
 	return 0;
 }

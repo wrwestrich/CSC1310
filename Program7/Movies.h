@@ -18,74 +18,74 @@ using namespace std;
 
 class Movies
 {
-	private:
-		LinkedList<Movie*>* movies;
+private:
+	LinkedList<Movie *> *movies;
 
-        void BubbleSort(LinkedList<Movie*>*, size_t);
+	void BubbleSort(LinkedList<Movie *> *, size_t);
 
-        void InsertionSort(LinkedList<Movie*>*, size_t);
+	void InsertionSort(LinkedList<Movie *> *, size_t);
 
-        void InsertionSortInv(LinkedList<Movie*>*, size_t);
+	void InsertionSortInv(LinkedList<Movie *> *, size_t);
 
-        void MergeSort(LinkedList<Movie*>*, size_t);
+	void MergeSort(LinkedList<Movie *> *, size_t);
 
-        void Merge(LinkedList<Movie*>*, size_t, size_t, size_t);
+	void Merge(LinkedList<Movie *> *, size_t, size_t, size_t);
 
-        size_t Partition(LinkedList<Movie*>*, size_t, size_t);
+	size_t Partition(LinkedList<Movie *> *, size_t, size_t);
 
-        void QuickSort(LinkedList<Movie*>*, size_t, size_t);
+	void QuickSort(LinkedList<Movie *> *, size_t, size_t);
 
-        void SelectionSort(LinkedList<Movie*>*, size_t);
+	void SelectionSort(LinkedList<Movie *> *, size_t);
 
-        int BinarySearch(LinkedList<Movie*>*, int, int, const char*);
+	int BinarySearch(LinkedList<Movie *> *, int, int, const char *);
 
-        int LinearSearch(LinkedList<Movie*>*, int, const char*);
+	int LinearSearch(LinkedList<Movie *> *, int, const char *);
 
-	public:
-		/*
+public:
+	/*
 			Function name:  Movies constructor 
 			Parameters:  	An integer containing the maximum size of the movie library 
 			Purpose:  		This function is automatically called when a Movies object is created and it creates a library
 							of movies.  The function will dynamically allocate a movies array based
 							on the maximum size and will also set the current number of movies to zero.
 		*/
-		Movies();
-		
-		/*
+	Movies();
+
+	/*
 			Function name:  ~Movies destructor 
 			Purpose:  		This function is automatically called when the Movies object is destroyed.
 							This releases the dynamically created individual movies and then deletes the array.
 		*/
-		~Movies();
-		
-		/*
+	~Movies();
+
+	/*
 			Function name:  addMovieToArray 
 			Parameters:  	none
 			Returns: 		A boolean indicating if the movie was able to be added or not
 			Purpose:  		This function should be called when you need to add a single movie to the
 							movie library.
 		*/
-		void AddToList();  
+	void AddToList();
 
-		/*
+	/*
 			Function name:  displayMovies 
 			Parameters:  	none
 			Returns: 		none (void)
 			Purpose:  		This function should be called when the user wants to have all the movies
 							in the library printed to the screen.
 		*/
-		void DisplayMovies();
-		
-		/*
+	void DisplayMovies();
+
+	/*
 			Function name:  displayMovieTitles 
 			Parameters:  	none 
 			Returns: 		none (void)
 			Purpose:  		This function should be called when you want to print only the movie titles
 							out of the movie library
 		*/
-		void DisplayTitles();
-		
-		/*
+	void DisplayTitles();
+
+	/*
 			Function name:  readMoviesFromFile 
 			Parameters:  	A pointer to a character (c-string or string literal argument) containing the filename
 			Returns: 		none (void)
@@ -93,9 +93,9 @@ class Movies
 							and add the movies to the movie library.  The file must have data in the following order:
 							title, length, year, genre, rating, number of Oscars won, star rating
 		*/
-		void ReadFromFile(char* filename);
-		
-		/*
+	void ReadFromFile(char *filename);
+
+	/*
 			Function name:  removeMovieFromArray 
 			Parameters:  	none
 			Returns: 		none (void)
@@ -103,17 +103,17 @@ class Movies
 							from the movie library.  The movie to be removed must is identified
 							by the user and then removed.
 		*/
-		void RemoveFromList();
+	void RemoveFromList();
 
-		/*
+	/*
 			Function name:  editMovieInArray 
 			Parameters:  	none
 			Returns: 		none
 			Purpose:  		This function should be called when you need to edit a movie in the array
 		*/
-		void EditMovieInList();
-				
-		/*
+	void EditMovieInList();
+
+	/*
 			Function name:  saveToFile 
 			Parameters:  	A pointer to a character (c-string or string literal argument) containing the filename
 			Returns: 		none (void)
@@ -122,11 +122,11 @@ class Movies
 							of data per line):
 							title, length, year, genre, rating, num oscars won, star rating
 		*/
-		void SaveToFile(char *filename);
+	void SaveToFile(char *filename);
 
-        void RunAnalysis();
+	void RunAnalysis();
 
-		//accessor functions to get the attribute values
-		int GetNumMovies();	
+	//accessor functions to get the attribute values
+	int GetNumMovies();
 };
 #endif

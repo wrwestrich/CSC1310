@@ -16,9 +16,9 @@ int main()
 {
 	int menuChoice;
 	char filename[50];
-	
-	Movies* movieLibrary = new Movies;
-	
+
+	Movies *movieLibrary = new Movies;
+
 	do
 	{
 		cout << "\n\nWhat would you like to do?\n";
@@ -28,60 +28,62 @@ int main()
 		cout << "4.  Delete a movie.\n";
 		cout << "5.  Edit a movie.\n";
 		cout << "6.  Print all movies.\n";
-        cout << "7.  Run Algorythm Analysis." << endl;
+		cout << "7.  Run Algorythm Analysis." << endl;
 		cout << "8.  Delete ALL movies and end the program.\n";
 		cout << "CHOOSE 1-8:  ";
 		cin >> menuChoice;
-		while(menuChoice < 1 || menuChoice > 8)
+		while (menuChoice < 1 || menuChoice > 8)
 		{
 			cout << "That is not a valid choice.\n";
 			cout << "CHOOSE 1-8:  ";
 			cin >> menuChoice;
-            cin.ignore();
+			cin.ignore();
 		}
-		
-		switch(menuChoice)
-		{
-			case 1:	cout << "\n\nWhat is the name of the file? (example.txt):  ";
-					cin >> filename;
-					movieLibrary->ReadFromFile(filename);
-					break;
-					
-			case 2: cout << "\n\nWhat do you want to name the file? (example.txt):  ";
-					cin >> filename;
-                    cin.ignore();
-					movieLibrary->SaveToFile(filename); 
-					break;
-					
-			case 3:	//add a movie
-					movieLibrary->AddToList();
-					break;
-					
-			case 4:	//delete a movie if there is more than one movie in the library.
-					movieLibrary->RemoveFromList();
-					break;
-					
-			case 5: //edit a movie
-					movieLibrary->EditMovieInList();
-					break;
-					
-			case 6: //print all movies
-					movieLibrary->DisplayMovies();
-					break;
-					
-			case 7: 
-                    movieLibrary->RunAnalysis();
-					break;
-		    
-            default:
-                    break;
-		}
-		
-	} while(menuChoice != 8);
 
-    delete movieLibrary;
-	
+		switch (menuChoice)
+		{
+		case 1:
+			cout << "\n\nWhat is the name of the file? (example.txt):  ";
+			cin >> filename;
+			movieLibrary->ReadFromFile(filename);
+			break;
+
+		case 2:
+			cout << "\n\nWhat do you want to name the file? (example.txt):  ";
+			cin >> filename;
+			cin.ignore();
+			movieLibrary->SaveToFile(filename);
+			break;
+
+		case 3: //add a movie
+			movieLibrary->AddToList();
+			break;
+
+		case 4: //delete a movie if there is more than one movie in the library.
+			movieLibrary->RemoveFromList();
+			break;
+
+		case 5: //edit a movie
+			movieLibrary->EditMovieInList();
+			break;
+
+		case 6: //print all movies
+			movieLibrary->DisplayMovies();
+			break;
+
+		case 7:
+			movieLibrary->RunAnalysis();
+			break;
+
+		default:
+			break;
+		}
+
+	} while (menuChoice != 8);
+
+	delete movieLibrary;
+
 	cout << "\n\nGOODBYE!\n\n";
-	
+
 	return 0;
 }

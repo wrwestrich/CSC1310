@@ -16,9 +16,9 @@ int main()
 {
 	int menuChoice;
 	char filename[50];
-	
-	Movies* movieLibrary = new Movies;
-	
+
+	Movies *movieLibrary = new Movies;
+
 	do
 	{
 		cout << "\n\nWhat would you like to do?\n";
@@ -31,53 +31,54 @@ int main()
 		cout << "7.  Delete ALL movies and end the program.\n";
 		cout << "CHOOSE 1-7:  ";
 		cin >> menuChoice;
-		while(menuChoice < 1 || menuChoice > 7)
+		while (menuChoice < 1 || menuChoice > 7)
 		{
 			cout << "That is not a valid choice.\n";
 			cout << "CHOOSE 1-7:  ";
 			cin >> menuChoice;
-            cin.ignore();
+			cin.ignore();
 		}
-		
-		switch(menuChoice)
-		{
-			case 1:	cout << "\n\nWhat is the name of the file? (example.txt):  ";
-					cin >> filename;
-					movieLibrary->ReadFromFile(filename);
-					break;
-					
-			case 2: cout << "\n\nWhat do you want to name the file? (example.txt):  ";
-					cin >> filename;
-                    cin.ignore();
-					movieLibrary->SaveToFile(filename); 
-					break;
-					
-			case 3:	//add a movie
-					movieLibrary->AddToList();
-					break;
-					
-			case 4:	//delete a movie if there is more than one movie in the library.
-					movieLibrary->RemoveFromList();
-					break;
-					
-			case 5: //edit a movie
-					movieLibrary->EditMovieInList();
-					break;
-					
-			case 6: //print all movies
-					movieLibrary->DisplayMovies();
-					break;
-					
-			case 7: 
-					break;
-					
-		}
-		
-	} while(menuChoice != 7);
 
-    delete movieLibrary;
-	
+		switch (menuChoice)
+		{
+		case 1:
+			cout << "\n\nWhat is the name of the file? (example.txt):  ";
+			cin >> filename;
+			movieLibrary->ReadFromFile(filename);
+			break;
+
+		case 2:
+			cout << "\n\nWhat do you want to name the file? (example.txt):  ";
+			cin >> filename;
+			cin.ignore();
+			movieLibrary->SaveToFile(filename);
+			break;
+
+		case 3: //add a movie
+			movieLibrary->AddToList();
+			break;
+
+		case 4: //delete a movie if there is more than one movie in the library.
+			movieLibrary->RemoveFromList();
+			break;
+
+		case 5: //edit a movie
+			movieLibrary->EditMovieInList();
+			break;
+
+		case 6: //print all movies
+			movieLibrary->DisplayMovies();
+			break;
+
+		case 7:
+			break;
+		}
+
+	} while (menuChoice != 7);
+
+	delete movieLibrary;
+
 	cout << "\n\nGOODBYE!\n\n";
-	
+
 	return 0;
 }

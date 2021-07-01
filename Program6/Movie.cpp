@@ -7,16 +7,14 @@
 #include "Movie.h"
 #include "Text.h"
 
-Movie::Movie(Text* title, int length)
+Movie::Movie(Text *title, int length)
 {
 	//assign parameter data to structure members
 	movieTitle = title;
 	movieLength = length;
 }
 
-
-
-Movie::Movie(Text* title, int length, int year, Text* genre, Text* rating, int nom, float stars) //all info is know
+Movie::Movie(Text *title, int length, int year, Text *genre, Text *rating, int nom, float stars) //all info is know
 {
 	//assign parameter data to structure members
 	movieTitle = title;
@@ -26,10 +24,7 @@ Movie::Movie(Text* title, int length, int year, Text* genre, Text* rating, int n
 	movieRating = rating;
 	movieOscars = nom;
 	movieNumStars = stars;
-
 }
-
-
 
 Movie::~Movie()
 {
@@ -37,8 +32,6 @@ Movie::~Movie()
 	delete movieGenre;
 	delete movieRating;
 }
-
-
 
 void Movie::printMovieDetails()
 {
@@ -55,10 +48,9 @@ void Movie::printMovieDetails()
 	movieRating->displayText();
 	cout << endl;
 	cout << right << setw(30) << "Number of Oscars Won:  " << left << movieOscars << endl;
-	cout << right << setw(30) << "Number of Stars:  " << left << movieNumStars << endl << endl;
+	cout << right << setw(30) << "Number of Stars:  " << left << movieNumStars << endl
+			 << endl;
 }
-
-
 
 void Movie::printMovieDetailsToFile(ofstream &outFile)
 {
@@ -75,13 +67,11 @@ void Movie::printMovieDetailsToFile(ofstream &outFile)
 	outFile << movieNumStars << endl;
 }
 
-
-
 void Movie::editMovie()
 {
 	int choice;
 	char temp[100];
-	
+
 	do
 	{
 		cout << "\n\nWhich detail do you wish to edit?\n";
@@ -95,60 +85,67 @@ void Movie::editMovie()
 		cout << "8.  DONE EDITING\n";
 		cout << "CHOOSE 1-8:  ";
 		cin >> choice;
-		while(choice < 1 || choice > 8)
+		while (choice < 1 || choice > 8)
 		{
 			cout << "\nOOPS!  Enter choice 1 through 8:  ";
 			cin >> choice;
 		}
 		cin.ignore();
-		
-		switch(choice)
+
+		switch (choice)
 		{
-			case 1: cout << "\nCurrent Title: ";
-					movieTitle->displayText();
-					cout << "\nNEW TITLE:  ";
-					cin.getline(temp, 100);
-					movieTitle->editText(temp);
-					break;
-			
-			case 2:	cout << "\nCurrent Length: " << movieLength;
-					cout << "\nNEW LENGTH:  ";
-					cin >> movieLength;
-					break;
-					
-			case 3: cout << "\nCurrent Year: " << movieYear;
-					cout << "\nNEW LENGTH:  ";
-					cin >> movieYear;
-					break;
-					
-			case 4:	cout << "\nCurrent Genre: ";
-					movieGenre->displayText();
-					cout << "\nNEW GENRE:  ";
-					cin.getline(temp, 100);
-					movieGenre->editText(temp);
-					break;
-					
-			case 5: cout << "\nCurrent Rating: ";
-					movieRating->displayText();
-					cout << "\nNEW GENRE:  ";
-					cin.getline(temp, 100);
-					movieRating->editText(temp);
-					break;
-			
-			case 6: cout << "\nCurrent Number of Oscars Won: " << movieOscars;
-					cout << "\nNEW NUMBER OF OSCARS:  ";
-					cin >> movieOscars;
-					break;
-					
-			case 7:	cout << "\nCurrent Star Rating from IMDB: " << movieNumStars;
-					cout << "\nNEW STAR RATING:  ";
-					cin >> movieNumStars;
-					break;
+		case 1:
+			cout << "\nCurrent Title: ";
+			movieTitle->displayText();
+			cout << "\nNEW TITLE:  ";
+			cin.getline(temp, 100);
+			movieTitle->editText(temp);
+			break;
+
+		case 2:
+			cout << "\nCurrent Length: " << movieLength;
+			cout << "\nNEW LENGTH:  ";
+			cin >> movieLength;
+			break;
+
+		case 3:
+			cout << "\nCurrent Year: " << movieYear;
+			cout << "\nNEW LENGTH:  ";
+			cin >> movieYear;
+			break;
+
+		case 4:
+			cout << "\nCurrent Genre: ";
+			movieGenre->displayText();
+			cout << "\nNEW GENRE:  ";
+			cin.getline(temp, 100);
+			movieGenre->editText(temp);
+			break;
+
+		case 5:
+			cout << "\nCurrent Rating: ";
+			movieRating->displayText();
+			cout << "\nNEW GENRE:  ";
+			cin.getline(temp, 100);
+			movieRating->editText(temp);
+			break;
+
+		case 6:
+			cout << "\nCurrent Number of Oscars Won: " << movieOscars;
+			cout << "\nNEW NUMBER OF OSCARS:  ";
+			cin >> movieOscars;
+			break;
+
+		case 7:
+			cout << "\nCurrent Star Rating from IMDB: " << movieNumStars;
+			cout << "\nNEW STAR RATING:  ";
+			cin >> movieNumStars;
+			break;
 		}
-	}while(choice != 8);
+	} while (choice != 8);
 }
 
-Text* Movie::getMovieTitle() const
+Text *Movie::getMovieTitle() const
 {
 	return movieTitle;
 }
@@ -163,12 +160,12 @@ int Movie::getMovieYear() const
 	return movieYear;
 }
 
-Text* Movie::getMovieGenre() const
+Text *Movie::getMovieGenre() const
 {
 	return movieGenre;
 }
 
-Text* Movie::getMovieRating() const
+Text *Movie::getMovieRating() const
 {
 	return movieRating;
 }
@@ -183,7 +180,7 @@ float Movie::getMovieNumStars() const
 	return movieNumStars;
 }
 
-void Movie::setMovieTitle(Text* title)
+void Movie::setMovieTitle(Text *title)
 {
 	movieTitle = title;
 }
@@ -198,12 +195,12 @@ void Movie::setMovieYear(int year)
 	movieYear = year;
 }
 
-void Movie::setMovieGenre(Text* genre)
+void Movie::setMovieGenre(Text *genre)
 {
 	movieGenre = genre;
 }
 
-void Movie::setMovieRating(Text* rating)
+void Movie::setMovieRating(Text *rating)
 {
 	movieRating = rating;
 }
